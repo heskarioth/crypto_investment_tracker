@@ -1,3 +1,4 @@
+GOOGLE_SHEET_ID = '1GO914FoLUKr_UwP9FRXkNq-Al3GLtjdZM_fvd53FKNI'
 
 PAIRS = {
         'BINANCE': 

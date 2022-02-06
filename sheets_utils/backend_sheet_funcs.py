@@ -3,13 +3,13 @@ import gspread
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
 from df2gspread import df2gspread as d2g
-
+from global_vars import GOOGLE_SHEET_ID
 scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
 creds = ServiceAccountCredentials.from_json_keyfile_name("sheets_utils/sheets_creds.json", scope)
 #creds = ServiceAccountCredentials.from_json_keyfile_name("sheets_creds.json", scope)
 
 client = gspread.authorize(creds)
-GOOGLE_SHEET_ID = '1GO914FoLUKr_UwP9FRXkNq-Al3GLtjdZM_fvd53FKNI'
+
 crypto_p = client.open_by_key(GOOGLE_SHEET_ID)
 
 
