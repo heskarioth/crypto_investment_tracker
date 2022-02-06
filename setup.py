@@ -6,7 +6,7 @@ setuptools.setup(
     version='1.0.0',
     packages=['crypto_investment_tracker'],
     license='MIT',
-    description = 'One In All Solution for your Crypto Investing Tracking',
+    description = 'All In One Solution for your Crypto Investing Tracking',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     author = 'Camillo Heska',
